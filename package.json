@@ -7,7 +7,7 @@
   "scripts": {
     "webpack:dev": "webpack --mode development --config webpack.client.js --watch",
     "webpack:server": "webpack --mode development --config webpack.server.js --watch",
-    "dev": "npm-run-all --parallel webpack:*",
+    "dev": "webpack-dev-server",
     "webpack:start": "nodemon --watch build --exec node build/bundle.js",
     "prod": "webpack --mode production --config webpack.client.js && --config webpack.server.js"
   },
@@ -33,6 +33,7 @@
     "@babel/preset-react": "7.0.0",
     "@babel/preset-stage-0": "7.0.0",
     "babel-loader": "8.0.6",
-    "webpack-cli": "3.3.6"
+    "webpack-cli": "3.3.6",
+    "webpack-dev-server": "3.11.0"
   }
 }

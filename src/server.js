@@ -8,7 +8,7 @@ import bodyParser from 'body-parser';
 const app = express();
 const port = process.env.PORT || 3000;
 
-import App from './src/app';
+import App from './app';
 
 app.use(bodyParser.json());
 app.use(express.static('build/public'));
